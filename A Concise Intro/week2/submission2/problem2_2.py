@@ -1,0 +1,10 @@
+def problem2_2(my_list):
+    print(list(my_list))
+    print(my_list[0])
+    print(my_list[-1])
+    print(list(my_list[3:5]))
+    print(list(my_list[0:3]))
+    print(list(my_list[3:]))
+    print((len(my_list)))
+    my_list.append("z")
+    print(list(my_list))
