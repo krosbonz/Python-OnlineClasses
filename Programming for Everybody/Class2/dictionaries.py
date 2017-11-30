@@ -133,3 +133,11 @@ chuck 5
 steve 34
 bryan 12
 
+#And get largest value
+largest = -1
+theword = None
+for k,v in counts.items():
+    if v > largest:
+        largest = v
+        theword = k
+
