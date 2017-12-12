@@ -10,7 +10,24 @@ print(lotto)
 #"lotto" is mutable (changeable) because we can change an index within "lotto"
 lotto = [2, 14, 26, 41, 63]
 lotto[0]
-#This is syntaxically correct
+
+list('lotto')
+#Output
+['l', 'o', 't', 't', 'o']
+
+list(lotto)
+#Output
+[2, 14, 26, 41, 63]
+
+#While the brackets remain open, a list can be put on multiple lines
+lotto = ['stuff',
+         'things',
+         'garbage',
+         'trash',]
+list(lotto)
+#Output
+['stuff', 'things', 'garbage', 'trash']
+
 
 #"frt" is immutable because it cannot be indexed
 frt = 'banana'
