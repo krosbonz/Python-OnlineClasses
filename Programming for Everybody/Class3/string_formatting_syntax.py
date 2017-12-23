@@ -22,7 +22,6 @@ greeting(214)
 "Hello %s, I am %d years old" % ('Steve', 12)
 
 
-
 #The %s has actually been replaced by the str.format method
 "Hello {}, my name is {}".format('john', 'mike')
 #Output
