@@ -48,5 +48,5 @@ print(x)
 
 #Another option
 x = re.findall('^From .*@([^ ]*)' ,y)
-#This says look for lines that start with "From and have any number of characters up to "@"
+#This says look for lines that start with "From" and have any number of characters up to "@"
 #extract all non blank characters after "@"
