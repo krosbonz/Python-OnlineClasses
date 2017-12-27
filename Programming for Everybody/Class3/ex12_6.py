@@ -19,6 +19,3 @@ while cnt < 7:
     cnt += 1
     url = namelnks[17]
     print(url)
-
-
-
