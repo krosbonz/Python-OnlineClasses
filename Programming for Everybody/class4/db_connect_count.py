@@ -1,6 +1,7 @@
 import sqlite3
 
 conn = sqlite3.connect('emaildb.sqlite')
+# The way this command works, if the db name doesn't exist it creates it
 cur = conn.cursor()
 # Connecting to a DB requires two steps
 # First you connect, then you send and receive commands through the cursor
