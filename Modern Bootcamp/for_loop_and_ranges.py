@@ -30,3 +30,35 @@ x = input("how many times should I repeat myself?")
 
 for n in x:
     print("repeat myself" * n)
+
+
+
+# Another example of loop and range
+
+x = range(1,21)
+
+for num in x:
+    if num % 2 == 0 and num != 4:
+        print(f"{num} is even")
+    elif num == 13 or num == 4:
+        print(f"{num} is unlucky")
+    else:
+        print(f"{num} is odd")
+
+
+
+# Yet another loop example;
+x = range(1,10)
+for y in x:
+    print("\U0001f600" * y)
+
+# This should be shortened to;
+for y in range(1,10):
+    print("\U0001f600" * y)
+
+
+# Nested for loop to repeat. This will repeat the 1,10 range three times;
+for x in range(3):
+    for y in range(1,10):
+        print("\U0001f600" * y)
+    
