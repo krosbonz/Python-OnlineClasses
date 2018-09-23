@@ -41,3 +41,9 @@ friends = ['jim', 'jessee', 'johnny']
 [num*10 for num in range(1,6)]
 # Output
 [10, 20, 30, 40, 50]
+
+nums = [1, 3, 5, 7]
+num_to_string = [str(x) for x in nums]
+print(num_to_string)
+# Output
+['1', '3', '5', '7']
