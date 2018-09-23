@@ -10,7 +10,7 @@ len(tasks)
 stuff = range(1,10)
 stuff
 # range(1,10)
-list(stuff)
+list(stuff)[0]
 # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 # or... quicker
