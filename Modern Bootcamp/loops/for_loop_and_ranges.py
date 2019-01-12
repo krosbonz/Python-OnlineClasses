@@ -3,7 +3,7 @@ stuff = range(1,7)
 for item in stuff:
     print(item)
     print(item * item)
-    print(item * 10)
+    print(item * 10)    
     
 
 # range(7) - Gives you 0 thru 6 exclusive of 7
