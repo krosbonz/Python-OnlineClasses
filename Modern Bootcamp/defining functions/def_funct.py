@@ -23,6 +23,7 @@ print(result)
 
 # NOTE: "return" exits a function, so even if there was more code directly
 # after "return 7**2" it would not run
+
 def square_of_seven():
     return 7**2
     print('yo mama')
