@@ -37,3 +37,7 @@ usernames = list(map(lambda user: user["username"].upper(),
 	filter(lambda u: not u['tweets'], users)))
 
 
+# Exercise - Only return non negative numbers
+
+def remove_negatives(lst):
+    return list(filter(lambda n: n >= 0, lst))

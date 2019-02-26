@@ -75,3 +75,5 @@ names = ['Lassie', 'Colt', 'Betsy']
 list(map(lambda name: f"Hello {name}", filter(lambda char: len(char) < 5, names)))
 # Output
 ['Hello Colt']
+
+
