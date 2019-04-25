@@ -7,7 +7,8 @@
 nums = [2, 4, 6, 8]
 
 doubles = map(lambda x: x * 2, nums)
-# Running doubles would create a map object
+# This says for "x" multiply it by 2 for each item in "nums"
+# Running "doubles" would create a map object
 doubles
 # Output
 <map object at 0x000001B67164EBA8>
@@ -53,9 +54,8 @@ decrement_list([1, 2, 3])
 [0, 1, 2]
 
 
-
 # Using Map and Filter
-# This creates a list of usernames filtered on users with no tweets
+# This creates a list of uppercase usernames filtered on users with no tweets
 users = [
 	{"username": "samuel", "tweets": ["I love cake", "I love pie", "hello world!"]},
 	{"username": "katie", "tweets": ["I love my cat"]},
@@ -65,8 +65,7 @@ users = [
 	{"username": "guitar_gal", "tweets": []}
 ]
 
-usernames = list(map(lambda user: user["username"].upper(), 
-	filter(lambda u: not u['tweets'], users)))
+usernames = list(map(lambda user: user["username"].upper(), filter(lambda u: not u['tweets'], users)))
 
 
 # Using Map and Filter 2

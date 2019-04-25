@@ -1,5 +1,5 @@
 # The idea of the lambda is to have a useful "in-line" command that eliminates
-# the need, in this case, for a defined function.
+# the need, in this case, for a defined function or return keyword.
 
 # A regular named function
 def square(num): return num * num
