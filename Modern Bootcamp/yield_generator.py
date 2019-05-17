@@ -6,7 +6,8 @@ it is left off. When resumed, the function continues execution immediately
 after the last yield run. This allows its code to produce a series of values 
 over time, rather them computing them at once and sending them back like a list."""
 
-# A "generator" is any function that contains "yield"
+# A "generator" is any function that contains "yield". Also, generators can only be
+# run once. 
 
 def nextSquare():
     i = 1; 
