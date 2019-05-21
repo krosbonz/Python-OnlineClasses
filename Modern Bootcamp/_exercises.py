@@ -24,6 +24,8 @@ response = requests.get(
 data = response.json()
 num_jokes = len(data["results"])
 
-
-print("There are " + str(num_jokes) + " for the topic of " + topic + "." )
-print(random.sample([data["results"]['joke']], 1))
+if num_jokes > 0:
+    print("I've got " + str(num_jokes) + " jokes about " + topic + "s. Here's one: " )
+    print(data["results"][random.randrange(num_jokes)]["joke"])
+else:
+    print("Sorry, I don't have any jokes about "+ topic +". Please try again.")
