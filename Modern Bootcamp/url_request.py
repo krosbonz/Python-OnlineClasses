@@ -52,3 +52,25 @@ data = response.json()
 print(data["results"])
 # Output
 [{'id': 'iGJeVKmWDlb', 'joke': 'My cat was sick, I don’t think it’s feline well.'}]
+
+
+# Exercise - fully functional user input, output one random joke
+import requests
+import random
+
+url = "https://icanhazdadjoke.com/search"
+
+topic = input("Let me tell you a joke! Give me a topic: ")
+
+response = requests.get(
+    url, headers={"Accept": "application/json"}, 
+    params={"term": topic})
+
+data = response.json()
+num_jokes = len(data["results"])
+
+if num_jokes > 0:
+    print("I've got " + str(num_jokes) + " jokes about " + topic + "s. Here's one: " )
+    print(data["results"][random.randrange(num_jokes)]["joke"])
+else:
+    print("Sorry, I don't have any jokes about "+ topic +". Please try again.")
