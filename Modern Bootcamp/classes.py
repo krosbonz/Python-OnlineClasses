@@ -70,4 +70,26 @@ False
 Happy 57th birthday, Joe!
 
 
+# Exercise...
 
+class BankAccount:
+    def __init__(self,owner, balance=0):
+        self.owner = owner
+        self.balance = balance
+        
+    def deposit(self,x):
+        self.balance = x + self.balance
+        return self.balance
+        
+    def withdraw(self,z):
+        self.balance = self.balance - z
+        return self.balance
+        
+acct = BankAccount("Darcy", 0)
+
+# Output from these different input
+acct.owner  # Darcy
+acct.balance # 0
+acct.deposit(10)  # 10
+acct.withdraw(3)  # 7
+acct.balance # 7
