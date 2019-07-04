@@ -15,7 +15,7 @@ print(user1)
 # an instance of a class (instantiate)
 class User:
     def __init__(self, first, last, age):
-# Self refers to the current instance of the class
+# Self refers to the current instance of the class (INSTANCE METHOD)
 # NOT the class itself but each instance of when the class is instantiated
 # Self must be the first parameter to __init__ and any methods and properties
 # on class instances
@@ -71,7 +71,6 @@ Happy 57th birthday, Joe!
 
 
 # Exercise...
-
 class BankAccount:
     def __init__(self,owner, balance=0):
         self.owner = owner
