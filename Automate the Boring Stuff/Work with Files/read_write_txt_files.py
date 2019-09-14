@@ -1,5 +1,7 @@
 # Opening a file for read and write
 
+# NOTE: You need a "\" to escape backslashes
+
 open_file = open('c:\\users\\hauck\\desktop\\temp.txt')
 content = open_file.read()
 print(content)
@@ -34,7 +36,7 @@ open_file.close()
 # Either
 open_file.readlines()
 # Output
-[blahblahblah..., per line...]
+# [blahblahblah..., per line...]
 
 # Or
 open_file.read()
