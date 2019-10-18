@@ -20,3 +20,6 @@ conn.sendmail(email, recip, f'Subject: {subj} \n\n {body}')
 # Required position for the script to put failed email notifications
 conn.quit
 
+# Note: This information can be found here;
+# https: // automatetheboringstuff.com/chapter16/
+

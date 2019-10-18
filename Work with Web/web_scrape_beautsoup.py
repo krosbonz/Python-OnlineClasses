@@ -21,3 +21,5 @@ print(forcast)
 # Right click any element and select "Inspect", this will open the browser 's developer tools.
 # In the Elements section of the dev tools open find the website element > Right click > Select "Copy Selector"
 
+# Note: This information can be found here;
+# https://automatetheboringstuff.com/chapter11/
