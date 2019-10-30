@@ -74,7 +74,10 @@ def current_beat():
 >> > next(stuff)
 1
 
-def make_song(max, "kombucha"):
-    while max > 1:
-        yield f"{x} bottle of {" kombucha "} on the wall"
-    
+def make_song(max, bev="kombucha"):
+    count = 0
+    while x in range(max + 1) > count:
+        yield count
+        count += 1
+    #print("'Only 1 bottle of kombucha left!'")
+    #f"{max} bottles of {bev} on the wall"
