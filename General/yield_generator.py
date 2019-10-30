@@ -75,9 +75,25 @@ def current_beat():
 1
 
 def make_song(max, bev="kombucha"):
-    count = 0
-    while x in range(max + 1) > count:
-        yield count
-        count += 1
+    count = []
+    while abs(len(count), max) > 2:
+        for x in range(max):
+            num_beer = max - len(count)
+            yield f"{num_beer} bottles of {bev} on the wall"
+            count.append(x)
+
+
+
+def make_song(max, bev="kombucha"):
+    count = []
+    num_beers = max - len(count)
+    for x in range(max):
+        if max + 2 > len(count):
+            yield f"{num_beer} bottles of {bev} on the wall"
+        elif:
+            max + 1 > len(count):
+            yield "Only 1 bottle {bev} on the wall"
+        count.append(x)
+        
     #print("'Only 1 bottle of kombucha left!'")
-    #f"{max} bottles of {bev} on the wall"
+    #f"{thing} bottles of {bev} on the wall"
