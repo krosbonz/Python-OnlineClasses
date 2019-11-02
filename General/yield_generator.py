@@ -74,26 +74,33 @@ def current_beat():
 >> > next(stuff)
 1
 
-def make_song(max, bev="kombucha"):
+Exercise 86 make_song;
+
+# My answer;
+def make_song(max=99, bev="soda"):
     count = []
-    while abs(len(count), max) > 2:
-        for x in range(max):
-            num_beer = max - len(count)
-            yield f"{num_beer} bottles of {bev} on the wall"
-            count.append(x)
-
-
-
-def make_song(max, bev="kombucha"):
-    count = []
-    num_beers = max - len(count)
     for x in range(max):
-        if max + 2 > len(count):
-            yield f"{num_beer} bottles of {bev} on the wall"
-        elif:
-            max + 1 > len(count):
-            yield "Only 1 bottle {bev} on the wall"
-        count.append(x)
-        
-    #print("'Only 1 bottle of kombucha left!'")
-    #f"{thing} bottles of {bev} on the wall"
+        while max - len(count) >= 2:
+            count.append(x)
+            beer = abs(max - len(count)) + 1
+            yield str(beer)+" bottles of "+str(bev)+" on the wall."
+        while max - len(count) == 1:
+            count.append(x)
+            yield "Only 1 bottle of "+str(bev)+" left!"
+        if max - len(count) == 0:
+            count.append(x)
+            yield "No more "+str(bev)+"!"
+
+# NOTE: Couldn't use "f-string" due to Udemy, so;
+# f"{num_beer} bottles of {bev} on the wall"
+
+# The most Pythonic answer;
+def make_song(verses=99, beverage="soda"):
+    for num in range(verses, -1, -1):
+# This range says start at 99, end at -1 and increment backwards by 1 
+        if num > 1:
+            yield "{} bottles of {} on the wall.".format(num, beverage)
+        elif num == 1:
+            yield "Only 1 bottle of {} left!".format(beverage)
+        else:
+            yield "No more {}!".format(beverage)
