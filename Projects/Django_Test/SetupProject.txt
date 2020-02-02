@@ -13,3 +13,8 @@ Install django
 Run: pip install django
 If not there CD to project folder
 Run: django-admin startproject nameofdjangoproject
+
+
+To run the Django server:
+cd django_test_proj
+python manage.py runserver

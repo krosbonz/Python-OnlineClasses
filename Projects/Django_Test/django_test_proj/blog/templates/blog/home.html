@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+    {% if title %}
+        <title>Django Project - {{ title }}</title>
+    {% else %}
+        <title>Django Project</title>
+    {% endif %}
+<body>
+    {% for post in posts %} #Will loop over the "posts" list of dicts
+        <h1>{{ post.title }}</h1>
+        <p>By {{ post.author }} on {{ post.date_posted }}</p>
+        <p>{{ post.content }}</p>
+
+    {% endfor %} #Required to end the for loop
+
+</body>    
+</html>
