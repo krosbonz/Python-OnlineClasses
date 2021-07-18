@@ -103,4 +103,4 @@ def make_song(verses=99, beverage="soda"):
         elif num == 1:
             yield "Only 1 bottle of {} left!".format(beverage)
         else:
-            yield "No more {}!".format(beverage)1
+            yield "No more {}!".format(beverage)
